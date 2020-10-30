@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+ background-color: white;   
+
+}
+.gameContainer{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.guy{
+    background-image: url(Astroman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 224px;
+    position: absolute;
+    bottom: 0;
+    left: 49px;
+}
+
+.obsticale{
+    background-image: url(boo.png);
+    background-size: cover;
+    width: 180px;
+    height: 124px;
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+   
+}
+
+.animateGuy{
+    animation: guy 0.6s linear;
+
+}
+
+.obsticaleAni{
+    animation: obsticaleAni 5s linear infinite;
+}
+
+
+@keyframes guy{
+    0%{
+        bottom: 0;
+    }
+    50%{
+       bottom: 422px; 
+    }
+
+    100%{
+        bottom: 0;
+    }
+
+}
+
+@keyframes obsticaleAni{
+    0%{
+        left: 100vw
+    }
+
+    100%{
+        left: -10vw;
+    }
+
+
+}
+
