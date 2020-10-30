@@ -5,7 +5,7 @@ document.onkeydown = function(e){
         guy.classList.add('animateGuy');
         setTimeout(() => {
            guy.classList.remove('animateGuy') 
-        }, 1000);
+        }, 1000); 
     }
 }
  
